@@ -29,11 +29,9 @@
   position: relative;
   bottom: 100px;
   font-size: 16px;
-  /*font-weight: bolder;*/
   margin: auto;
-  width: 1200px;
-  scroll-margin-top: 1000px;
   margin-top: 8rem;
+  width: 80%;
 }
 
 .image {
@@ -46,17 +44,9 @@
 body {
   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; /* #ID# #FONT# - Changes the font of EVERYTHING*/
   margin: 0px;
+  display: flex;
 }
-.header {
-  /*Header*/
-  background-color: #84b89e; /* #ID# #HEADER COLOR# Change color of the header at the top of the screen. */
-  height: 70px;
-  vertical-align: middle;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
+
 a:link {
   /*Changes colour of links*/
   color: inherit;
@@ -69,11 +59,10 @@ h1 {
 /*Navigation SIDEBAR*/
 #sidebar {
   /*WEBSITE WITHOUT MODIFICATIONS HAS THIS AS AN ID (#) RATHER THAN A COMMENT (.)*/
-  height: 100%;
-  width: 20%;
+  height: 100vh;
+  width: 20vw;
   min-width: 250px;
   background-color: #d8d8d8;
-  position: fixed !important;
   z-index: 2;
   overflow-x: hidden;
 }
@@ -133,7 +122,7 @@ h1 {
   width: auto;
 }
 .sidebar-contact-table {
-  margin-left: 40px;
+  margin-left: 1rem;
   width: 270px;
   position: fixed;
   bottom: 20px;
@@ -283,7 +272,9 @@ h1 {
   margin-bottom: 1rem;
 }
 #content {
-  margin-left: 20%;
+  width: 80vw;
+  height: 100vh;
+  overflow: auto;
 }
 .imagefix1 {
   margin-top: 3rem;
